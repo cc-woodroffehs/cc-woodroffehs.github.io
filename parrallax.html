@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="parallax-container">
+	<div class="parallax"><img class="img-responsive" src="https://i.imgsafe.org/caf3ab3.jpg"></div>
+</div>
+
+<div class="section">
+	<div class="row center-align">
+		<div class="col s0 m0 l3">
+		<p></p>
+		</div>
+		{% for object in site.data.objects %}
+		<div class="col s12 m4 l2">
+			<div class="card">
+				<div class="card-image">
+					<a href="{{ object.link }}">
+						<img class="responsive-img" src="{{ object.image }}">
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<div class="parallax-container">
+<div class="parallax"><img class="img-responsive" src="https://i.imgsafe.org/1660992.jpg"></div>
+</div>
+
+<div class="section">
+	<h5 class="center-align grey-text">Twitter test for WoodroffeHS.com</h5>
+	<div class="container" id="twitterFeed">
+	</div>
+</div>
+
+<div class="parallax-container">
+	<div class="parallax"><img class="img-responsive" src="https://i.imgsafe.org/18642f5.jpg"></div>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jason Le</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+</head>
+
+	<body>
+		{{ content }}
+		{% include footer.html %}
+		<script type="text/javascript" src="js/twitterFetcher_old.js"></script>
+		<!-- Twitter Fetcher -->
+		<script>
+		$(document).ready(function(){
+			var twitterFetch = {
+			  "id": '730145476058570754',
+			  "domId": 'twitterFeed',
+			  "enableLinks": true,
+			  "showPermalinks": true,
+			  "showRetweet": true,
+			  "showImages": true,
+			  "showTime": false,
+			  "showInteraction": false,
+			  "showUser": false,
+			};
+			twitterFetcher.fetch(twitterFetch);
+			var anchors = document.getElementsByTagName('a');
+			var anchors = document.getAttribute('data-scribe');
+				for (anchor = 0; anchor < anchors.length; anchor++) {
+					anchors[anchor].innerHTML="Short Link";
+				}
+		})
+		</script>
+	</body>
+</html>
