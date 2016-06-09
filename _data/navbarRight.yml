@@ -1,2 +1,5 @@
 - title: Teachers
-  link: teachers.html
+  link: /resources/teachers.html
+- title: Forums
+  link: http://woodroffe.freeforums.net/
+  target: _blank

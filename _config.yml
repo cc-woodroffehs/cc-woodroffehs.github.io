@@ -1,3 +1,4 @@
 # Site settings
 title: WoodroffeHS - Student Operated Site
 url: "https://woodroffehs.ca" # The base hostname & protocol for your site. Use it if you need absolute URL's
+enfore_ssl "woodroffehs.ca"
