@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row">
+  {% for item in site.data.students %}
+  <div class="col s6 l1">
+    <div class="card">
+      <div class="card-image">
+        <a href="{{ item.url }}">
+          <img src="{{ item.image }}">
+        </a>
+      </div>
+    </div>
+    <div class="center">
+      <a href="{{ item.url }}">
+        <p>{{ item.title }}</p>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

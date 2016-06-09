@@ -18,7 +18,12 @@
 				<nav>
 					<div class="nav-wrapper" style="background-color: orange;">
 						<a href="#" data-activates="nav-mobile" class="show-on-large button-collapse right"><i class="material-icons">toc</i></a>
-						<a href="#" class="brand-logo center"><img src="https://i.imgsafe.org/72c1ae7504.png"></a>
+						<div class="hide-on-med-and-down">
+							<a href="{{ site.url }}" class="brand-logo center"><img src="https://i.imgsafe.org/72c1ae7504.png"></a>
+						</div>
+						<div class="hide-on-large-only">
+							<a href="{{ site.url }}" class="brand-logo center"><img height="53px" src="https://i.imgsafe.org/75aa21dd8a.png"></a>
+						</div>
 						<ul id="naverR" class="right hide-on-med-and-down">
 						{% for item in site.data.navbarRight %}
 							<li><a href="{{ item.link }}">{{ item.title }}</a></li>
