@@ -13,8 +13,8 @@
 })(this, function() {
   function C(a) {
     if (null === r) {
-      for (var g = a.length, c = 0, k = document.getElementById(D), f = '<div class="row">'; c < g;) f += '<div class="col s12 m6 l4"><div class="card small">' + a[c] + "</div></div>", c++;
-      k.innerHTML = f + "</div>"
+      for (var g = a.length, c = 0, k = document.getElementById(D), f = '<div class="col s12 m12 l10"><div class="row">'; c < g;) f += '<div class="col s12 m6 l4"><div class="card small">' + a[c] + "</div></div>", c++;
+      k.innerHTML = f + "</div></div>"
     } else r(a)
   }
 
