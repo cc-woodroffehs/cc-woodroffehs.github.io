@@ -1,36 +1,6 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div id="twitterFeed">
+<div id="twitterFeed">
 
-  </div>
 </div>
-
-<div class="center">
-	<p>Welcome to Woodroffe High School (HS) student operated website.</p>
-</div>
-
-<script type="text/javascript" src="js/twitterFetcher_old.js"></script>
-	<!-- Twitter Fetcher -->
-<script>
-$(document).ready(function(){
-	var twitterFetch = {
-	  "id": '730145476058570754',
-	  "domId": 'twitterFeed',
-	  "enableLinks": true,
-	  "showPermalinks": true,
-	  "showRetweet": true,
-	  "showImages": true,
-	  "showTime": false,
-	  "showInteraction": false,
-	  "showUser": false,
-	};
-	twitterFetcher.fetch(twitterFetch);
-	var anchors = document.getElementsByTagName('a');
-	var anchors = document.getAttribute('data-scribe');
-		for (anchor = 0; anchor < anchors.length; anchor++) {
-			anchors[anchor].innerHTML="Short Link";
-		}
-})
-</script>

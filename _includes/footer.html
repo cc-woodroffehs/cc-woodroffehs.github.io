@@ -1,11 +1,22 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- <script type="text/javascript" src="js/materialize.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<!-- Twitter Fetcher -->
+<!-- <script type="text/javascript" src="/js/materialize.js"></script> -->
 <script>$(".button-collapse").sideNav();</script>
+<script type="text/javascript" src="/js/twitterFetcher_old.js"></script>
 <script>
-$(document).ready(function(){
-      $('.parallax').parallax();
-			$('.scrollspy').scrollSpy();
-			$('.materialboxed').materialbox();
-    });
+		$(document).ready(function(){
+			var twitterFetch = {
+			  "id": '730145476058570754',
+			  "domId": 'twitterFeed',
+			  "enableLinks": true,
+			  "showPermalinks": true,
+			  "showRetweet": true,
+			  "showImages": true,
+			  "showTime": false,
+			  "showInteraction": false,
+			  "showUser": false,
+			};
+			twitterFetcher.fetch(twitterFetch);
+		})
 </script>
