@@ -1,30 +1,36 @@
 - title: Student Records
   image: https://i.imgsafe.org/75a7907111.png
   url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
+  icon: fa-book
 - title: Focus on Youth
   image: https://i.imgsafe.org/75a7810fa9.jpg
   url: http://www.ocdsb.ca/stu/Pages/FocusonYouth.aspx
 - title: Scholarships
   image: https://i.imgsafe.org/75a78b4489.png
   url: http://www.ocdsb.ca/stu/scholarshipscontests/Pages/default.aspx
+  icon: fa-graduation-cap
 - title: MyDocs
   image: https://i.imgsafe.org/75a7752ca1.png
+  icon: fa-pencil-square-o
   url: https://mydocs.ocdsb.ca
 - title: Homework Help
   image: https://i.imgsafe.org/75a77bf6b7.png
   url: https://homeworkhelp.ilc.org
 - title: Course Guides
   image: https://i.imgsafe.org/75a7605328.png
+  icon: fa-file-text-o
   url: http://www.ocdsb.ca/programs/sec/SecondarySchoolCourses/Pages/default.aspx
 - title: Community Service Form
   url: http://www.ocdsb.ca/med/pub/Publications%20%20Updated/OCDSB_716_Comm_Involvement_Notification.pdf
   image: https://i.imgsafe.org/75a7584745.png
 - title: Career Crusing
   image: https://i.imgsafe.org/75a7530cd6.png
+  icon: fa-users
   url: https://www2.careercruising.com/default/cplogin/OCD
 - title: Desire2Learn
   image: https://i.imgsafe.org/9e04a54fe8.png
   url: https://ocdsb.elearningontario.ca/
+  icon: fa-object-group
 - title: Wolfram Alpha
   image: https://i.imgsafe.org/218a86af33.png
   url: http://www.wolframalpha.com/
