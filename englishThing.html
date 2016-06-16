@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div id="lostModal" class="modal">
+  <div class="modal-content">
+    <h4>Seems like you got lost would you like me to redirect you back to the homepage?</h4>
+    <a class="waves-effect waves-light orange lighten-3 btn" href="/">Yes</a>
+    <a class="waves-effect waves-light orange lighten-3 btn modal-action modal-close">No</a>
+  </div>
+</div>
+<img class="materialboxed" width="100%" src="https://i.imgsafe.org/08273add45.png">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#lostModal").openModal();
+})
+</script>
