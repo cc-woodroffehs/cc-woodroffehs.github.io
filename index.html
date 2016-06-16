@@ -1,32 +1,81 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div id="twitterFeed">
-
+<div class="row center">
+  <div class="col s6">
+    <a class="waves-effect waves-light orange lighten-3 btn-flat white-text" id="loadTwitterButton">Load Twitter</a>
   </div>
-  <div class="hide-on-med-and-down">
-    <div class="col l2">
-      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <div class="col l1">
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="https://www.facebook.com/pages/Woodroffe-High-School/107481115948407?fref=ts" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-    </div>
-    <div class="col l1">
-      <script src="https://apis.google.com/js/platform.js"></script>
+  <div class="col s6">
+    <a class="waves-effect waves-light orange lighten-3 btn-flat white-text" href="https://woodroffehs.ocdsb.ca/Home%20Page%20Docs/June%20Exam%20Schedule%202016.pdf">
+      Exam Schedule
+    </a>
+  </div>
+</div>
+<div class="row">
+<div id="clickTwitter">
 
-<div class="g-ytsubscribe" data-channelid="UCoOfx13ziGalKrlaCJAsXOQ" data-layout="default" data-count="default"></div>
-    </div>
+</div>
+    <div class="col s12 l12" id="sideBar">
+      <div class="row">
+        <div class="hide-on-med-and-down">
+          <div class="col s12 l6" id="examCalendar">
+            <embed src="https://woodroffehs.ocdsb.ca/Home%20Page%20Docs/June%20Exam%20Schedule%202016.pdf" width="100%" height="1000px" frameBorder="0"></embed>
+          </div>
+        </div>
+
+        <div class="col s12 l6" id="calendar">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="col s12 center">
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-like" data-href="https://www.facebook.com/pages/Woodroffe-High-School/107481115948407?fref=ts" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+        <div class="col s12 center">
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCoOfx13ziGalKrlaCJAsXOQ" data-layout="default" data-count="default"></div>
+        </div>
+      </div>
   </div>
 </div>
 <div class="center">
 <p>Designed for attendees, by students</p>
 </div>
+
+<script type="text/javascript" src="/js/twitterFetcher_old.js"></script>
+<script>
+$("#loadTwitterButton").click( function() {
+var twitterFetch = {
+				"id": '730145476058570754',
+			  "domId": 'clickTwitter',
+			  "enableLinks": true,
+			  "showPermalinks": true,
+			  "showRetweet": true,
+			  "showImages": true,
+			  "showTime": false,
+			  "showInteraction": false,
+			  "showUser": false,
+			};
+var buttonName = "#loadTwitterButton"
+if($(buttonName).attr("loaded") !== "true"){
+  $(buttonName).attr("loaded", "true");
+  twitterFetcher.fetch(twitterFetch);
+} else {
+  $("#clickTwitter").toggle();
+};
+if($("#loadTwitterButton").text() == "Load Twitter"){
+  $(buttonName).text("Unload Twitter");
+} else {
+  $(buttonName).text("Load Twitter");
+};
+$("#sideBar").toggleClass("l12 l4");
+$("#examCalendar").toggle();
+$("#calendar").toggleClass("l6 l12");
+});
+</script>
