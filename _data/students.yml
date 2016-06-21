@@ -5,6 +5,7 @@
 - title: Focus on Youth
   image: https://i.imgsafe.org/75a7810fa9.jpg
   url: http://www.ocdsb.ca/stu/Pages/FocusonYouth.aspx
+  icon: fa-child
 - title: Scholarships
   image: https://i.imgsafe.org/75a78b4489.png
   url: http://www.ocdsb.ca/stu/scholarshipscontests/Pages/default.aspx
@@ -16,13 +17,15 @@
 - title: Homework Help
   image: https://i.imgsafe.org/75a77bf6b7.png
   url: https://homeworkhelp.ilc.org
+  icon: fa-cubes
 - title: Course Guides
   image: https://i.imgsafe.org/75a7605328.png
   icon: fa-file-text-o
   url: http://www.ocdsb.ca/programs/sec/SecondarySchoolCourses/Pages/default.aspx
-- title: Community Service Form
+- title: Volunteer Form
   url: http://www.ocdsb.ca/med/pub/Publications%20%20Updated/OCDSB_716_Comm_Involvement_Notification.pdf
   image: https://i.imgsafe.org/75a7584745.png
+  icon: fa-check-square-o
 - title: Career Crusing
   image: https://i.imgsafe.org/75a7530cd6.png
   icon: fa-users
@@ -34,6 +37,8 @@
 - title: Wolfram Alpha
   image: https://i.imgsafe.org/218a86af33.png
   url: http://www.wolframalpha.com/
+  icon: fa-calculator
 - title: Desmos
   image: https://i.imgsafe.org/20ea66ef24.png
   url: https://www.desmos.com/calculator
+  icon: fa-area-chart

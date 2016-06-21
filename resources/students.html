@@ -4,18 +4,14 @@ layout: default
 <div class="row">
   {% for item in site.data.students %}
   <div class="col s4 l1">
-    <div class="card">
-      <div class="card-image">
-        <a href="{{ item.url }}">
-          <img src="{{ item.image }}">
-        </a>
-      </div>
+    <a href="{{ item.url }}">
+    <div class="center">
+      <i class="fa {{ item.icon }} fa-5x"></i>
     </div>
     <div class="center">
-      <a href="{{ item.url }}">
-        <p>{{ item.title }}</p>
-      </a>
+      <p>{{ item.title }}</p>
     </div>
+  </a>
   </div>
   {% endfor %}
 </div>
