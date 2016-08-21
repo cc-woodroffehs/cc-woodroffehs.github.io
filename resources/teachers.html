@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!---
 <div class="row">
   {% for item in site.data.teachers %}
   <div class="col s4 l1">
@@ -19,3 +20,49 @@ layout: default
   </div>
   {% endfor %}
 </div>
+--->
+
+<div class="container">
+  <div class="row">
+    <input type="text" id="search-teacher"/>
+  </div>
+  <div class="row">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th data-field="name">Name</th>
+          <th data-field="email">Email</th>
+          <th data-field="webpage">Webpage</th>
+          <th data-field="department">Department</th>
+          <th data-field="position">Position</th>
+        </tr>
+      </thead>
+      <tbody id="tList">
+        {% for teacher in site.data.teacherList2 %}
+          <tr>
+            <td>{{ teacher.name }}</td>
+            <td>{{ teacher.email }}</td>
+            <td><a href="{{ teacher.webpage }}">{{ teacher.webpage }}</a></td>
+            <td>{{ teacher.department }}</td>
+            <td>{{ teacher.position }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+<div>
+
+<script>
+  $(function(){
+    $('#search-teacher').keyup(function(){
+      var searchText = $(this).val().toLowerCase();
+
+      $('#tList > tr').each(function(){
+        var currentLiText = $(this).text().toLowerCase(),
+          showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+
+        $(this).toggle(showCurrentLi);
+      });
+    });
+  });
+</script>

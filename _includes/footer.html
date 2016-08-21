@@ -2,3 +2,18 @@
 <script>
 $(".button-collapse").sideNav();
 </script>
+
+<script>
+  $(function(){
+    $('#search-input').keyup(function(){
+      var searchText = $(this).val().toLowerCase();
+
+      $('#nav-mobile > li').each(function(){
+        var currentLiText = $(this).text().toLowerCase(),
+          showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+
+        $(this).toggle(showCurrentLi);
+      });
+    });
+  });
+</script>
