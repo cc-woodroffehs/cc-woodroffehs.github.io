@@ -15,6 +15,9 @@
 					{% for item in site.data.navbarRight %}
 						<li><a href="{{ item.link }}">{{ item.title }}</a></li>
 					{% endfor %}
+					{% for item in site.data.navbarExtra %}
+						<li><a href="{{ item.link }}">{{ item.title }}</a></li>
+					{% endfor %}
 				</ul>
 			</div>
 			<div class="navbar-fixed">

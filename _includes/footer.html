@@ -25,5 +25,10 @@ $(".button-collapse").sideNav();
         $(this).attr("value", "");
       }
     })
+    $('#search-input').focusout(function(){
+      if ($(this).val() == "") {
+        $(this).attr("value", "Search...");
+      }
+    })
   })
 </script>

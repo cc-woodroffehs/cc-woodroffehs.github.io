@@ -76,3 +76,13 @@ layout: default
     })
   })
 </script>
+
+<script>
+  $(function() {
+    $('#search-teacher').focusout(function(){
+      if ($(this).val() == "") {
+        $(this).attr("value", "Search...");
+      }
+    })
+  })
+</script>
