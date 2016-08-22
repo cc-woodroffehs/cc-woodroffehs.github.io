@@ -1,4 +1,4 @@
-- title: Student Records
+- title: Records
   image: https://i.imgsafe.org/75a7907111.png
   url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
   icon: fa-book
@@ -14,7 +14,7 @@
   image: https://i.imgsafe.org/75a7752ca1.png
   icon: fa-pencil-square-o
   url: https://mydocs.ocdsb.ca
-- title: Homework Help
+- title: iLc
   image: https://i.imgsafe.org/75a77bf6b7.png
   url: https://homeworkhelp.ilc.org
   icon: fa-cubes
@@ -42,3 +42,12 @@
   image: https://i.imgsafe.org/20ea66ef24.png
   url: https://www.desmos.com/calculator
   icon: fa-area-chart
+- title: OUAC
+  url: http://www.ouac.on.ca/
+  icon: fa-university
+- title: Library
+  url: https://sites.google.com/a/ocdsb.ca/whs-library/
+  icon: fa-database
+- title: Classroom
+  url: https://classroom.google.com
+  icon: fa-wpforms

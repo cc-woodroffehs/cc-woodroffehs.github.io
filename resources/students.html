@@ -6,12 +6,28 @@ layout: default
   <div class="col s4 l1">
     <a href="{{ item.url }}">
     <div class="center">
+      {% if item.icon %}
       <i class="fa {{ item.icon }} fa-5x"></i>
+      {% endif %}
     </div>
     <div class="center">
       <p>{{ item.title }}</p>
     </div>
   </a>
+  </div>
+  {% endfor %}
+</div>
+<div class="row">
+  <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item center-align">Book a guidance appointment</li>
+    </ul>
+  </div>
+  {% for person in site.data.guidanceCounselors %}
+  <div class="col s4 hide-on-med-and-down">
+    <div class="collection">
+      <a href="{{ person.link }}" target="_blank" class="collection-item center-align">{{ person.name }} : {{ person.category }}</a>
+    </div>
   </div>
   {% endfor %}
 </div>
