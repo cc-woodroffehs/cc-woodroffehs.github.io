@@ -17,3 +17,13 @@ $(".button-collapse").sideNav();
     });
   });
 </script>
+
+<script>
+  $(function() {
+    $('#search-input').focus(function(){
+      if ($(this).val() == "Search...") {
+        $(this).attr("value", "");
+      }
+    })
+  })
+</script>

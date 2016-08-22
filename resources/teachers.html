@@ -24,7 +24,7 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <input type="text" id="search-teacher"/>
+    <input type="text" id="search-teacher" value="Search..."/>
   </div>
   <div class="row">
     <table class="responsive-table">
@@ -65,4 +65,14 @@ layout: default
       });
     });
   });
+</script>
+
+<script>
+  $(function() {
+    $('#search-teacher').focus(function(){
+      if ($(this).val() == "Search...") {
+        $(this).attr("value", "");
+      }
+    })
+  })
 </script>

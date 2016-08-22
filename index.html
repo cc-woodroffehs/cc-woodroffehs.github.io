@@ -2,32 +2,20 @@
 layout: default
 ---
 <div class="row center">
-  <div class="col s6">
+  <div class="col s12">
     <div class="collection">
       <a class="waves-effect waves-light orange lighten-3 collection-item white-text" id="loadTwitterButton">Load Twitter</a>
     </div>
   </div>
-  <div class="col s6">
-    <div class="collection">
-    <a class="waves-effect waves-light orange lighten-3 collection-item white-text" href="https://woodroffehs.ocdsb.ca/Home%20Page%20Docs/June%20Exam%20Schedule%202016.pdf">
-      Exam Schedule
-    </a>
-  </div>
-  </div>
 </div>
 <div class="row">
 <div id="clickTwitter">
-
 </div>
     <div class="col s12 l12" id="sideBar">
-      <div class="row">
-        <div class="hide-on-med-and-down">
-          <div class="col s12 l6" id="examCalendar">
-            <embed src="https://woodroffehs.ocdsb.ca/Home%20Page%20Docs/June%20Exam%20Schedule%202016.pdf" width="100%" height="1000px" frameBorder="0"></embed>
-          </div>
+        <div class="col s12 l8" id="map">
+          <img class="materialboxed" width="100%" src="images/mapview.PNG">
         </div>
-
-        <div class="col s12 l6" id="calendar">
+        <div class="col s12 l4" id="calendar">
           <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="col s12 center">
@@ -79,7 +67,12 @@ if($("#loadTwitterButton").text() == "Load Twitter"){
   $(buttonName).text("Load Twitter");
 };
 $("#sideBar").toggleClass("l12 l4");
-$("#examCalendar").toggle();
-$("#calendar").toggleClass("l6 l12");
+$("#calendar").toggleClass("l4 l12");
+$("#map").toggleClass("l8 l12")
 });
+</script>
+<script>
+$(document).ready(function() {
+  $('.materialboxed').materialbox();
+})
 </script>
