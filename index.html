@@ -2,60 +2,50 @@
 layout: default
 ---
 <div class="row center">
-  <div class="col s12">
+  <div class="col s6">
     <div class="collection">
       <a class="waves-effect waves-light orange lighten-3 collection-item white-text" id="loadTwitterButton">Load Twitter</a>
     </div>
   </div>
+  <div class="col s6">
+    <div class="collection">
+    <a class="waves-effect waves-light orange lighten-3 collection-item white-text" href="pdf/WHSBack2SchoolNewsLetter.pdf">
+      School Newsletter
+    </a>
+  </div>
+  </div>
 </div>
-
 <div class="row">
-  <div id="clickTwitter"></div>
-  <div class="col s12 l8" id="sideBar">
-    <div class="row">
-      <div class="col s12">
-        <img class="materialboxed" width="100%" src="images/mapview.PNG">
-      </div>
+<div id="clickTwitter">
+
+</div>
+    <div class="col s12 l12" id="sideBar">
       <div class="row">
-        <div class="col s12">
-          <ul class="collection">
-            <li class="collection-item center-align">Book a guidance appointment</li>
-          </ul>
-        </div>
-        <table class="centered">
-          <thead>
-            <tr>
-              <th data-field="name">Counselor</th>
-              <th data-field="category">Last Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for person in site.data.guidanceCounselors %}
-            <tr class="clickables" wantedUrl="{{ person.link }}">
-              <td><a>{{ person.name }}</a></td>
-              <td><a>{{ person.category }}</a></td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      <div class="col s12">
-        <div class="card orange darken-1">
-          <div class="card-content">
-            <p><a href="https://www.google.ca/maps/place/2410+Georgina+Dr,+Ottawa,+ON+K2B+7M7/@45.3625647,-75.7822785,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce012cf1b9abf7:0x9461802ee5f58973!8m2!3d45.362561!4d-75.7800898" target="_blank" class="black-text"><b>Address:</b> 2410 Georgina Dr, Ottawa, ON K2B 7M8</a></p>
-            <p><b>Phone:</b> (613) 820-7186</p>
-            <p><a href="https://ocdsb.ca" target="_blank" class="black-text"><b>District:</b> Ottawa-Carleton District School Board</a></p>
-            <p><b>Founded:</b> 1960</p>
-            <p><a href="https://ocdsb.ca" target="_blank" class="black-text"><b>School board:</b> Ottawa-Carleton District School Board</a></p>
-            <p><b>Lowest grade:</b> Ninth grade</p>
-            <p><b>Staff:</b> 90</p>
+        <div class="hide-on-med-and-down">
+          <div class="col s12 l6" id="newsletter">
+            <embed src="pdf/WHSBack2SchoolNewsLetter.pdf" width="100%" height="1000px" frameBorder="0"></embed>
           </div>
         </div>
+
+        <div class="col s12 l6" id="calendar">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="col s12 center">
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-like" data-href="https://www.facebook.com/pages/Woodroffe-High-School/107481115948407?fref=ts" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+        <div class="col s12 center">
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCoOfx13ziGalKrlaCJAsXOQ" data-layout="default" data-count="default"></div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col s12 l4" id="sideBar">
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no">Loading Calendar...</iframe>
   </div>
 </div>
 <div class="center">
@@ -88,13 +78,8 @@ if($("#loadTwitterButton").text() == "Load Twitter"){
 } else {
   $(buttonName).text("Load Twitter");
 };
-$("#sideBar").toggleClass("l8 l4");
-$("#calendar").toggleClass("l4 l12");
-$("#map").toggleClass("l8 l12")
+$("#sideBar").toggleClass("l12 l4");
+$("#examCalendar").toggle();
+$("#calendar").toggleClass("l6 l12");
 });
-</script>
-<script>
-$(document).ready(function() {
-  $('.materialboxed').materialbox();
-})
 </script>
