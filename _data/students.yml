@@ -27,6 +27,9 @@
 - title: Classroom
   url: https://classroom.google.com
   icon: fa-wpforms
+- title: WHS Chat
+  url: https://discord.gg/Z6XPkWg
+  icon: fa-comments
 - title: Student Records
   image: https://i.imgsafe.org/75a7907111.png
   url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
@@ -51,3 +54,4 @@
   image: https://i.imgsafe.org/218a86af33.png
   url: http://www.wolframalpha.com/
   icon: fa-calculator
+
