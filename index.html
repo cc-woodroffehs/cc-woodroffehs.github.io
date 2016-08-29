@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!-- Load Twitter Button -->
 <div class="row center">
   <div class="col s12">
     <div class="collection">
@@ -9,41 +10,44 @@ layout: default
   </div>
 </div>
 
+<!-- Main Body of Page -->
 <div class="row">
+  <!-- When loadTWitterButton is clicked, this will be filled with content -->
   <div id="clickTwitter"></div>
+
+  <!-- Left hand side things -->
   <div class="col s12 l8" id="sideBar">
     <div class="row">
+
+      <!-- Main Image -->
       <div class="col s12">
         <img class="materialboxed" width="100%" src="images/mapview.PNG">
       </div>
+
+      <!-- Guidance appointment booking pulled from "/_includes/bookGuidance.html" -->
       {% include bookGuidance.html %}
       </div>
+
+      <!-- School Info Card pulled from "/_includes/schoolInfoCard.html" -->
       <div class="col s12">
-        <div class="card orange darken-1">
-          <div class="card-content">
-            <p><a href="https://www.google.ca/maps/place/2410+Georgina+Dr,+Ottawa,+ON+K2B+7M7/@45.3625647,-75.7822785,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce012cf1b9abf7:0x9461802ee5f58973!8m2!3d45.362561!4d-75.7800898" target="_blank" class="black-text"><b>Address:</b> 2410 Georgina Dr, Ottawa, ON K2B 7M8</a></p>
-            <p><b>Phone:</b> (613) 820-7186</p>
-            <p><a href="https://ocdsb.ca" target="_blank" class="black-text"><b>District:</b> Ottawa-Carleton District School Board</a></p>
-            <p><b>Founded:</b> 1960</p>
-            <p><a href="https://ocdsb.ca" target="_blank" class="black-text"><b>School board:</b> Ottawa-Carleton District School Board</a></p>
-            <p><b>Lowest grade:</b> Ninth grade</p>
-            <p><b>Staff:</b> 90</p>
-          </div>
-        </div>
+        {% include schoolInfoCard.html %}
       </div>
     </div>
   </div>
+
+  <!-- Google calendar -->
   <div class="col s12 l4" id="sideBar">
     <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ocdsb.ca_ml13bp6glu7bssjtmggbn5l0fc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FToronto" style="border-width:0" width="100%" height="1000" frameborder="0" scrolling="no">Loading Calendar...</iframe>
   </div>
 </div>
+
+<!-- Notation at end -->
 <div class="center">
 <p>Designed for attendees, by students</p>
 </div>
 
-<script type="text/javascript" src="/js/twitterFetcher_old.js"></script>
+<script type="text/javascript" src="/js/twitterFetcher.js"></script>
 <script>
-$("#loadTwitterButton").click( function() {
 var twitterFetch = {
 				"id": '730145476058570754',
 			  "domId": 'clickTwitter',
@@ -56,6 +60,8 @@ var twitterFetch = {
 			  "showUser": false,
 			};
 var buttonName = "#loadTwitterButton"
+
+$("#loadTwitterButton").click( function() {
 if($(buttonName).attr("loaded") !== "true"){
   $(buttonName).attr("loaded", "true");
   twitterFetcher.fetch(twitterFetch);
@@ -67,12 +73,18 @@ if($("#loadTwitterButton").text() == "Load Twitter"){
 } else {
   $(buttonName).text("Load Twitter");
 };
+
+// Resizes entire page to fit
 $("#sideBar").toggleClass("l8 l4");
+// Resizes individual calendar to max size of column
 $("#calendar").toggleClass("l4 l12");
+// Resizes map to max size of column
 $("#map").toggleClass("l8 l12")
 });
 </script>
+
 <script>
+// Link the image to materialboxed
 $(document).ready(function() {
   $('.materialboxed').materialbox();
 })
