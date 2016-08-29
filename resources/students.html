@@ -17,19 +17,4 @@ layout: default
   </div>
   {% endfor %}
 </div>
-<table class="centered">
-  <thead>
-    <tr>
-      <th data-field="name">Counselor</th>
-      <th data-field="category">Last Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for person in site.data.guidanceCounselors %}
-    <tr class="clickables" wantedUrl="{{ person.link }}">
-      <td><a>{{ person.name }}</a></td>
-      <td><a>{{ person.category }}</a></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% include bookGuidance.html %}
