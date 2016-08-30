@@ -30,10 +30,6 @@
 - title: WHS Chat
   url: https://discord.gg/Z6XPkWg
   icon: fa-comments
-- title: Student Records
-  image: https://i.imgsafe.org/75a7907111.png
-  url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
-  icon: fa-book
 - title: Focus on Youth
   image: https://i.imgsafe.org/75a7810fa9.jpg
   url: http://www.ocdsb.ca/stu/Pages/FocusonYouth.aspx
@@ -54,4 +50,7 @@
   image: https://i.imgsafe.org/218a86af33.png
   url: http://www.wolframalpha.com/
   icon: fa-calculator
-
+- title: Student Records
+  image: https://i.imgsafe.org/75a7907111.png
+  url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
+  icon: fa-book
