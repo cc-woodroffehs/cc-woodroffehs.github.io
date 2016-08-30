@@ -6,7 +6,9 @@ layout: default
   <div class="col s4 l1">
     <a href="{{ item.url }}">
     <div class="center">
+      {% if item.icon %}
       <i class="fa {{ item.icon }} fa-5x"></i>
+      {% endif %}
     </div>
     <div class="center">
       <p>{{ item.title }}</p>
@@ -15,3 +17,5 @@ layout: default
   </div>
   {% endfor %}
 </div>
+{% include bookGuidance.html %}
+{% include ttChangeRequest.html %}

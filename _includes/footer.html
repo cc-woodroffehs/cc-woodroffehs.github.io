@@ -1,8 +1,6 @@
 <script>$(".button-collapse").sideNav();</script>
-<script>
-$(".button-collapse").sideNav();
-</script>
 
+<!-- Side bar search --->
 <script>
   $(function(){
     $('#search-input').keyup(function(){
@@ -16,4 +14,25 @@ $(".button-collapse").sideNav();
       });
     });
   });
+</script>
+
+<!--- Sidebar show "Search..." text --->
+<script>
+  $(function() {
+    $('#search-input').focus(function(){
+      if ($(this).val() == "Search...") {
+        $(this).attr("value", "");
+      }
+    })
+    $('#search-input').focusout(function(){
+      if ($(this).val() == "") {
+        $(this).attr("value", "Search...");
+      }
+    })
+  })
+</script>
+<script>
+$(".clickables").click(function() {
+  window.open($(this).attr("wantedUrl"), '_blank');
+})
 </script>
