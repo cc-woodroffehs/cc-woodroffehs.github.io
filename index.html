@@ -32,11 +32,10 @@ layout: default
       <!-- Guidance appointment booking pulled from "/_includes/bookGuidance.html" -->
       {% include bookGuidance.html %}
       <!-- Newsletter pdf -->
-      <div class="col s12">
-        <embed src=resources/Newsletter.pdf width=100% height=1000px>
-        </embed>
-        Trouble viewing? <a href=resources/Newsletter.pdf target=_blank>View the pdf in a seperate window</a>
-      </div>
+        <div class="col s12">
+            <iframe src="http://docs.google.com/gview?url={{ site.url }}/resources/Newsletter.pdf&embedded=true"                       width="100%" height="1000px" frameborder="0"></iframe>        
+            Trouble viewing? <a href=resources/Newsletter.pdf target=_blank>View the pdf in a seperate window</a>        
+        </div>
       </div>
     </div>
   </div>
