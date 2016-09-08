@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div>
+{% for item in site.data.textbooks %}
+ <div class="card horizontal">
+  <div class="card-stacked">
+   <div class="card-content">
+    <a href="{{item.url}}">{{item.title}}</a>
+   </div>
+  </div>
+ </div>
+ {% endfor %}
+</div>

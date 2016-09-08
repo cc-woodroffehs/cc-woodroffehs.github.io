@@ -56,4 +56,7 @@
 - title: Student Records
   image: https://i.imgsafe.org/75a7907111.png
   url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
+  icon: fa-folder-open-o
+- title: Textbooks
+  url: textbooks.html
   icon: fa-book
