@@ -162,7 +162,7 @@
             b = "";
             H && (b +=
               '<p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=' + q[d] + '" class="twitter_reply_icon"' + (t ? ' target="_blank">' : ">") + 'Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=' + q[d] + '" class="twitter_retweet_icon"' + (t ? ' target="_blank">' : ">") + 'Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=' + q[d] + '" class="twitter_fav_icon"' + (t ? ' target="_blank">' : ">") + "Favorite</a></p>");
-            I && void 0 !== h[d] && (b += '<div class="card-image"><img src="' + F(h[d]) + '" alt="Image from tweet" /></div>');
+            I && void 0 !== h[d] && (b += '<div class="card-image"><a href="' + F(h[d]) + '" target="_blank"><img src="' + F(h[d]) + '" alt="Image from tweet" /></a></div>');
             G ? (t && (E(a[d]), w && E(k[d])), w && (b += '<div class="user">' + p(k[d].innerHTML) + "</div>"), b += '<div class="card-content center"><p>' + p(a[d].innerHTML) + "</p></div>", y && (b = J ? b + ('<p class="timePosted"><a href="' + n[d] + '">' + f[d].getAttribute("aria-label") + "</a></p>") : b + ('<p class="timePosted">' + f[d].getAttribute("aria-label") + "</p>"))) : (w && (b += '<p class="user">' + k[d].textContent + "</p>"), b += '<p class="tweet">' + a[d].textContent + "</p>", y && (b += '<p class="timePosted">' + f[d].textContent + "</p>"));
             c.push(b);
             d++
