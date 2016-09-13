@@ -1,4 +1,11 @@
-<script>$(".button-collapse").sideNav();</script>
+<script>
+$(".button-collapse").sideNav();
+
+$("#headerSearchButton").click(function() {
+  $('.button-collapse').sideNav('show');
+  $('#search-input').focus();
+});
+</script>
 
 <!-- Side bar search --->
 <script>
@@ -35,4 +42,7 @@
 $(".clickables").click(function() {
   window.open($(this).attr("wantedUrl"), '_blank');
 })
+</script>
+<script>
+
 </script>
