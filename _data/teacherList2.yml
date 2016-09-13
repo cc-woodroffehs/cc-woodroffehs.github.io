@@ -1,225 +1,315 @@
-- name: Mr. Conboy
-  email: dave.conboy@ocdsb.ca
-  webpage:
-  department: ELD and Spanish
-  position: Teacher
-- name: Mr. Duncan
-  email: terry.duncan@ocdsb.ca
-  webpage:
-  department: Arts
-  position: Department Head
-- name: Mr. Fritzlan
-  email: jeff.fritzlan@ocdsb.ca
-  webpage:
-  department: Technology, Construction, Tech Design
-  position: Teachers
-- name: Mr. Gordon
-  email: scott.gordon@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/the-gordon-files/
-  department: English, ESL/ELD and Library
-  position: Department Head
-- name: Mr. Grozelle
-  email: michael.grozelle@ocdsb.ca
-  webpage:
-  department: Physical Education
-  position: Teacher
-- name: Mr. Khan
-  email: mohamed.khan@ocdsb.ca
-  webpage:
-  department: Transportation Technology, Design Technology
-  position: Teacher
-- name: Mr. Levers
-  email: scott.levers@ocdsb.ca
-  webpage:
-  department: Mathematics
-  position: Teacher
-- name: Mr. Mertens
-  email: alexander.mertens@ocdsb.ca
-  webpage:
-  department: Canadian & World Studies, Social Sciences
-  position: Teachers
-- name: Mr. Oakes
-  email: andrew.oakes@ocdsb.ca
-  webpage:
-  department: English, Civics, Careers
-  position: Teacher
-- name: Mr. Prentice
-  email: jeff.prentice@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/mr-prentice-s-classes/
-  department: Technology, Physics, Mathematics
-  position: Department Head
-- name: Mr. Schmidt
-  email: brian.schmidt@ocdsb.ca
-  webpage:
-  department: Physical Education
-  position: Department Head
-- name: Mr. Shephard
-  email: michael.shephard@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/shephards-classes/
-  department: Physical Education, Co-op Education
-  position: Teacher
-- name: Mr. Wenczler
-  email: jason.wenczler@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/wenczler-s-classroom/
-  department: Mathematics
-  position: Teacher
-- name: Mr. Zacour
-  email: james.zacour@ocdsb.ca
-  webpage: http://www.tinyurl.com/zacour9
-  department: Mathematics, Computer Science
-  position: Department Head
-- name: Ms. Abdulkadir
+- name: Ms.Abdulkadir
   email: idil.abdulkadir@ocdsb.ca
-  webpage: http://www.woodroffehs.com/%22www.missabdul.com
-  department: Mathematics
+  website: http://www.woodroffehs.com/%22www.missabdul.com
   position: Teacher
-- name: Ms. Abi-Zeid
+  department: Mathematics
+- name: Ms.Abi-Zeid
   email: mylene.abi-zeid@ocdsb.ca
-  webpage:
-  department: French, Mathematics
+  website:
   position: Teacher
-- name: Ms. Beal
+  department: Mathematics
+- name: Mr.Appel
+  email: brian.appel@ocdsb.ca
+  website:
+  position: Teacher
+  department: Geography, History, GLP Phys-Ed
+- name: Mr.Aspropotamitis
+  email: jimmy.aspropotamitis@ocdsb.ca
+  website:
+  position: Teacher
+  department: GLP
+- name: Ms.Beal
   email: brittany.beal@ocbsb.ca
-  webpage:
-  department: Mathematics
+  website:
   position: Teacher
-- name: Ms. Bech
+  department: Mathematics
+- name: Ms.Bech
   email: karina.bech@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/bech/
-  department: English
+  website: https://sites.google.com/a/ocdsb.ca/bech/
   position: Teacher
-- name: Ms. Bennett
+  department: English, Yearbook
+- name: Mr.Bell
+  email: brian.bell@ocdsb.ca
+  website:
+  position: Teacher
+  department: English, Careers, History
+- name: Ms.Bennett
   email: shannon.bennett@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-bennett-s-classes/
-  department: French, Mathematics
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-bennett-s-classes/
   position: Teacher
-- name: Ms. Berry
+  department: French
+- name: Ms.Berry
   email: barbara.berry@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/mrs-berry
-  department: Physical Education and Co-op SHSM Lead Teacher - Sport Performance (A.M. only)
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/mrs-berry
   position: Teacher
-- name: Ms. Bradshaw
+  department: Phy Ed,  Co-op, SHSM Lead Teacher (Sport Performance)
+- name: Mr.Bigelow
+  email: jodi.bigelow@ocdsb.ca
+  website:
+  position: Teacher
+  department: Careers, Social Science
+- name: Mr.Blackwell
+  email: matthew.blackwell@ocdsb.ca
+  website:
+  position: Teacher
+  department: GLP
+- name: Ms.Bradshaw
   email: tegan.bradshaw@ocdsb.ca
-  webpage: http://msbradshaw-whs.wikispaces.com/
-  department: Science
+  website: http://msbradshaw-whs.wikispaces.com/
   position: Teacher
-- name: Ms. Bragg
+  department: Science
+- name: Ms.Bragg
   email: isabel.bragg@ocdsb.ca
-  webpage:
-  department: Science
+  website:
   position: Teacher
-- name: Ms. Bruski
+  department: Science
+- name: Ms.Bruski
   email: colleen.bruski@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/bruskiszone/
+  website: https://sites.google.com/a/ocdsb.ca/bruskiszone/
+  position: Teacher
   department: Science (Biology)
-  position: Teacher
-- name: Ms. Carrier
+- name: Ms.Callaghan
+  email: courtney.callaghan@ocdsb.ca
+  website:
+  position: Department Head
+  department: Geography
+- name: Ms.Carrier
   email: allison.carrier@ocdsb.ca
-  webpage:
-  department: Dance, Mathematics
+  website:
   position: Teacher
-- name: Ms. Coddett
+  department: Dance
+- name: Ms.Coddett
   email: adrienne.coddett@ocdsb.ca
-  webpage:
+  website:
+  position: Teacher
   department: Social Sciences, History and Law
+- name: Mr.Conboy
+  email: dave.conboy@ocdsb.ca
+  website:
   position: Teacher
-- name: Ms. Ducharme
+  department: ELD, Spanish
+- name: Ms.Drodge
+  email: kathryn.drodge@ocdsb.ca
+  website:
+  position: Teacher
+  department: Geography, History, Civics (French Immersion)
+- name: Ms.Ducharme
   email: julie.ducharme@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-ducharme/home
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-ducharme/home
+  position: Department Head
   department: French and Languages, Civisme, Anthropologie
+- name: Mr.Duncan
+  email: terry.duncan@ocdsb.ca
+  website:
   position: Department Head
-- name: Ms. Frye
-  email: cassandra.frye@ocdsb.ca
-  webpage:
-  department: Learning Supports, French
+  department: Instrumental Music, Band
+- name: Mr.Easey
+  email: mathew.easey@ocdsb.ca
+  website:
   position: Teacher
-- name: Ms. Gibson
-  email: kelly.gibson@ocdsb.ca
-  webpage:
-  department: ESL, Geography and Careers
+  department: Credit Recovery, Learning Strategies
+- name: Mr.Eskritt
+  email: ian.eskritt@ocdsb.ca
+  website:
   position: Teacher
-- name: Ms. Green
-  email: ellen.green@ocdsb.ca
-  webpage:
-  department: Mathematics
+  department: Guidance
+- name: Ms.Fleming
+  email: kaitlin.fleming@ocdsb.ca
+  website:
   position: Teacher
-- name: Ms. Gunter-Woods
-  email: wendy.gunter-woods@ocdsb.ca
-  webpage:
-  department: Drama, English
-  position: Teacher
-- name: Ms. Herring
-  email: tammy.herring@ocdsb.ca
-  webpage:
-  department: Science
-  position: Department Head
-- name: Ms. Lones
-  email: allison.lones@ocdsb.ca
-  webpage:
-  department: English
-  position: Teacher
-- name: Ms. Mason
-  email: Barbara.mason@ocdsb.ca
-  webpage: http://bookscool.wikispaces.com/2014-2015+School+Year
-  department: English
-  position: Teacher
-- name: Ms. McIntyre
-  email: kellie.mcintyre@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-mcintyre-s-classes/
-  department: French, Science (Immersion)
-  position: Teacher
-- name: Ms. Merkel
-  email: ruth.merkel@ocdsb.ca
-  webpage:
-  department: Music, Drama
-  position: Teacher
-- name: Ms. Newsome
-  email: holly.newsome@ocdsb.ca
-  webpage:
-  department: Science (Biology, Environmental Science)
+  department: French, English
+- name: Mr.Fritzlan
+  email: jeff.fritzlan@ocdsb.ca
+  website:
   position: Teachers
-- name: Ms. O'Connor
+  department: Technology, Construction, Tech Design
+- name: Ms.Frye
+  email: cassandra.frye@ocdsb.ca
+  website:
+  position: Teacher
+  department: French, Learning Support
+- name: Ms.Gibson
+  email: kelly.gibson@ocdsb.ca
+  website:
+  position: Teacher
+  department: ESL / ELD
+- name: Mr.Gordon
+  email: scott.gordon@ocdsb.ca
+  website: https://sites.google.com/a/ocdsb.ca/the-gordon-files/
+  position: Department Head
+  department: English, Library
+- name: Ms.Green
+  email: ellen.green@ocdsb.ca
+  website:
+  position: Teacher
+  department: Mathematics
+- name: Mr.Grozelle
+  email: michael.grozelle@ocdsb.ca
+  website:
+  position: Teacher
+  department: Physical Education
+- name: Ms.Gunter-Woods
+  email: wendy.gunter-woods@ocdsb.ca
+  website:
+  position: Teacher
+  department: Drama, English 
+- name: Ms.Gunter-Woods
+  email: wendy.gunter-woods@ocdsb.ca
+  website:
+  position: Teacher
+  department: English
+- name: Ms.Herring
+  email: tammy.herring@ocdsb.ca
+  website:
+  position: Department Head
+  department: Science
+- name: Mr.Hughson
+  email: jamie.hughson@ocdsb.ca
+  website:
+  position: Teacher
+  department: GLP
+- name: Mr.Hum
+  email: james.hum@ocdsb.ca
+  website:
+  position: Teacher
+  department: Business, Co-op
+- name: Mr.Khan
+  email: mohamed.khan@ocdsb.ca
+  website:
+  position: Teacher
+  department: Transportation Technology, Design Technology
+- name: Mr.Lairson
+  email: jaden.lairson@ocdsb.ca
+  website:
+  position: Teacher
+  department: History, Native Studies, World Issues
+- name: Mr.Levers
+  email: scott.levers@ocdsb.ca
+  website:
+  position: Teacher
+  department: Mathematics
+- name: Ms.Lones
+  email: allison.lones@ocdsb.ca
+  website:
+  position: Teacher
+  department: English
+- name: Ms.MacDonald
+  email: susan-jane.macdonald@ocdsb.ca
+  website:
+  position: Teacher
+  department: Learning Strategies
+- name: Ms.Malhotra
+  email: neerja.malhotra@ocdsb.ca
+  website:
+  position: Teacher
+  department: Guidance, ELD Math
+- name: Ms.McIntyre
+  email: kellie.mcintyre@ocdsb.ca
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/mme-mcintyre-s-classes/
+  position: Teacher
+  department: Science (Immersion), French  
+- name: Ms.Merkel
+  email: ruth.merkel@ocdsb.ca
+  website:
+  position: Teacher
+  department: Art, Drama, Voice, Musical Theatre
+- name: Mr.Mertens
+  email: alexander.mertens@ocdsb.ca
+  website:
+  position: Teacher
+  department: Canadian &amp; World Studies, Social Sciences
+- name: Ms.Newsome
+  email: holly.newsome@ocdsb.ca
+  website:
+  position: Teachers
+  department: Food &amp; Nutrition, Science
+- name: Mr.Oakes
+  email: andrew.oakes@ocdsb.ca
+  website:
+  position: Teacher
+  department: English, Civics, Business
+- name: Ms.O'Connor
   email: eleanor.oconnor@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/oconnor/
+  website: https://sites.google.com/a/ocdsb.ca/oconnor/
+  position: Teacher
   department: Mathematics, Computer Science
-  position: Teacher
-- name: Ms. Osborne
+- name: Ms.Osborne
   email: sharon.osborne@ocdsb.ca
-  webpage:
-  department: Physical Education, Outdoor Education and Guidance
+  website:
   position: Teacher
-- name: Ms. Reid
+  department: GLP
+- name: Mr.Pai
+  email: jimmy.pai@ocdsb.ca
+  website:
+  position: Teacher
+  department: Mathematics
+- name: Ms.Patterson
+  email: joni.patterson@ocdsb.ca
+  website:
+  position: Teacher
+  department: Phys-Ed, Kinesiology
+- name: Ms.Pilgrim
+  email: krista.pilgrim@ocdsb.ca
+  website:
+  position: Teacher
+  department: Phys-Ed, Credit Recovery
+- name: Mr.Prentice
+  email: jeff.prentice@ocdsb.ca
+  website: https://sites.google.com/a/ocdsb.ca/mr-prentice-s-classes/
+  position: Department Head
+  department: Technology, Physics, Mathematics
+- name: Ms.Rawn
+  email: lindsey.rawn@ocdsb.ca
+  website:
+  position: Teacher
+  department: Guidance Counsellor
+- name: Ms.Reid
   email: ann-marie.reid@ocdsb.ca
-  webpage:
-  department: ESL, Family Study
+  website:
   position: Teacher
-- name: Ms. Ross-Nguyen
+  department: ESL / ELD, English
+- name: Ms.Ross-Nguyen
   email: sandra.ross-nguyen@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/ms-ross-nguyen-s-classes/
-  department: English and ESL
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/ms-ross-nguyen-s-classes/
   position: Teacher
-- name: Ms. Sheu
+  department: ESL / ELD, Library
+- name: Mr.Schmidt
+  email: brian.schmidt@ocdsb.ca
+  website:
+  position: Department Head
+  department: Physical Education, Outdoor Education
+- name: Mr.Shephard
+  email: michael.shephard@ocdsb.ca
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/shephards-classes/
+  position: Teacher
+  department: Physical Education, Outdoor Education
+- name: Ms.Sheu
   email: carolynn.sheu@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/sheu/
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/sheu/
+  position: Teacher
   department: Visual Arts
-  position: Teacher
-- name: Ms. Stanhope
+- name: Ms.Stanhope
   email: christy.stanhope@ocdsb.ca
-  webpage: https://sites.google.com/a/woodroffehs.ocdsb.ca/stanhope/
+  website: https://sites.google.com/a/woodroffehs.ocdsb.ca/stanhope/
+  position: Teacher
   department: Visual Arts, Drama
-  position: Teacher
-- name: Ms. Thomas
+- name: Ms.Thomas
   email: patricia.thomas@ocdsb.ca
-  webpage:
-  department: Mathematics
+  website:
   position: Teacher
-- name: Ms. Tsarouhas
+  department: Mathematics
+- name: Ms.Tsarouhas
   email: katherine.tsarouhas@ocdsb.ca
-  webpage:
+  website:
+  position: Teacher
   department: Dance (AM only)
-  position: Teacher
-- name: Ms. Wendler
+- name: Ms.Wendler
   email: cindy.wendler@ocdsb.ca
-  webpage: https://sites.google.com/a/ocdsb.ca/wendler/
-  department: Mathematics
+  website: https://sites.google.com/a/ocdsb.ca/wendler/
   position: Teacher
+  department: Mathematics
+- name: Mr.Zacour
+  email: james.zacour@ocdsb.ca
+  website: http://www.tinyurl.com/zacour9">Homework Calendar</a>
+  position: Department Head
+  department: Mathematics, Computer Science, Physics
