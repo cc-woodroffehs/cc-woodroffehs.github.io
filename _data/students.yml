@@ -1,6 +1,9 @@
 - title: Bonpatron
   url: http://bonpatron.com/
   icon: fa-check-circle
+- title: Textbooks
+  url: textbooks.html
+  icon: fa-book
 - title: iLc
   image: https://i.imgsafe.org/75a77bf6b7.png
   url: https://homeworkhelp.ilc.org
@@ -33,10 +36,6 @@
 - title: WHS Chat
   url: https://discord.gg/Z6XPkWg
   icon: fa-comments
-- title: Focus on Youth
-  image: https://i.imgsafe.org/75a7810fa9.jpg
-  url: http://www.ocdsb.ca/stu/Pages/FocusonYouth.aspx
-  icon: fa-child
 - title: Course Guides
   image: https://i.imgsafe.org/75a7605328.png
   icon: fa-file-text-o
@@ -57,6 +56,7 @@
   image: https://i.imgsafe.org/75a7907111.png
   url: http://www.ocdsb.ca/par/sr/Pages/default.aspx
   icon: fa-folder-open-o
-- title: Textbooks
-  url: textbooks.html
-  icon: fa-book
+- title: Focus on Youth
+  image: https://i.imgsafe.org/75a7810fa9.jpg
+  url: http://www.ocdsb.ca/stu/Pages/FocusonYouth.aspx
+  icon: fa-child
