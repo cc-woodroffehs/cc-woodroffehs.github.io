@@ -1,13 +1,26 @@
 ---
 layout: blank
 ---
-<a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/BotQwoto/timelines/776155345265700864">
-  <div class="spinner">
-    <div class="cube1"></div>
-    <div class="cube2"></div>
-  </div>
-</a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<div class="hide-on-small-only">
+  <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/BotQwoto/timelines/776155345265700864">
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+  </a>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div class="hide-on-med-only hide-on-large-only">
+  <a class="twitter-timeline" data-partner="tweetdeck" data-chrome="noheader nofooter noscrollbar transparent noborders" href="https://twitter.com/BotQwoto/timelines/776155345265700864">
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+  </a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 <style>
 .spinner {
   margin: 100px auto;
