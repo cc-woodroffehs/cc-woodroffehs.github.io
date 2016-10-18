@@ -2,25 +2,12 @@
 layout: blank
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 <script src="https://use.fontawesome.com/28e8f6ef03.js"></script>
-<div class="hide-on-small-only">
-  <a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/WoodyYearbook/timelines/778679293819752448">
-    <div class="spinner">
-      <div class="cube1"></div>
-      <div class="cube2"></div>
-    </div>
-  </a>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="" id="twitzt">
+
 </div>
-<div class="hide-on-med-only hide-on-large-only">
-  <a class="twitter-timeline" data-partner="tweetdeck" data-chrome="noheader nofooter noscrollbar transparent noborders" href="https://twitter.com/BotQwoto/timelines/776155345265700864">
-    <div class="spinner">
-      <div class="cube1"></div>
-      <div class="cube2"></div>
-    </div>
-  </a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+
 <div class="fixed-action-btn" style="top: 24px; left:24px;">
   <a class="btn-floating btn-large blue" href="https://ybstore.friesens.com/stores/338066" target="_blank">
     <i class="fa fa-dollar"></i>
@@ -37,63 +24,44 @@ layout: blank
     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
   </div>
 </div>
-
-<script>
-var $toastContent = $('<a href="https://ybstore.friesens.com/stores/338066">Pre-Order now!</a>');
-$('.modal-trigger').leanModal();
-setTimeout(function(){
-  Materialize.toast($toastContent, 5000);
-}, 10000)
-</script>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script type="text/javascript" src="yb.js"></script>
 <style>
-.spinner {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
+#twitzt {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;
 }
 
-.cube1, .cube2 {
-  background-color: #333;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
-  animation: sk-cubemove 1.8s infinite ease-in-out;
-}
-
-.cube2 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-
-@-webkit-keyframes sk-cubemove {
-  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
-  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
-  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
-  100% { -webkit-transform: rotate(-360deg) }
-}
-
-@keyframes sk-cubemove {
-  25% {
-    transform: translateX(42px) rotate(-90deg) scale(0.5);
-    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-  } 50% {
-    transform: translateX(42px) translateY(42px) rotate(-179deg);
-    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-  } 50.1% {
-    transform: translateX(42px) translateY(42px) rotate(-180deg);
-    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-  } 75% {
-    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-  } 100% {
-    transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-  }
+#twitzt img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
 }
 </style>
+<script>
+  var twitterFetch = {
+  				"profile": {"screenName": "woodyyearbook"},
+  			  "domId": 'twitzt',
+  			  "enableLinks": false,
+  			  "showPermalinks": false,
+  			  "showRetweet": false,
+  			  "showImages": true,
+  			  "showTime": false,
+  			  "showInteraction": false,
+  			  "showUser": false,
+  			};
+  twitterFetcher.fetch(twitterFetch);
+</script>
+<script>
+$(document).ready(function(){
+  $('.slider').slider();
+})
+</script>
