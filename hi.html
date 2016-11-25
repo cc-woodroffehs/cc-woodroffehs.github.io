@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="center">
+  <p>
+    Thanks for visiting this website! We hope you enjoy it.
+  </p>
+  <p id="secret">
+
+  </p>
+  <a class="waves-effect waves-light orange lighten-3 btn" href="/">Click here to go to the main page.</a>
+</div>
+<script>
+$(document).ready(function(){
+  // Your application has indicated there's an error
+   window.setTimeout(function(){
+
+       // Move to a new location or you can do something else
+       window.location.href = "https://www.youtube.com/watch?v=E4qMm1uU5Ek";
+
+   }, 12000);
+
+});
+</script>
+<script>
+$(document).ready(function(){
+  window.setTimeout(function(){
+    $("#secret").text('Please comment "I was sent here by Graehame"');
+  }, 9000);
+  })
+</script>
