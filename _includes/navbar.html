@@ -1,0 +1,68 @@
+<div class="col s0 m0 l0">
+  <ul id="nav-mobile" class="side-nav" style="overflow: auto; left; 0px;">
+    <div class="container">
+        <input type="text" id="search-input" value="Search..."/>
+    </div>
+    {% for item in site.data.navbarLeft %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% endfor %}
+    {% for item in site.data.navbarRight %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% endfor %}
+    {% for item in site.data.navbarExtra %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% endfor %}
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion" id="clubOpen">
+        <li>
+          <a class="collapsible-header">Clubs<i class="material-icons right">view-list</i></a>
+          <div class="collapsible-body">
+            <ul id="clubs">
+              {% for club in site.data.clubs %}
+              <li><a href="{{club.link}}" class="truncate">{{club.clubName}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    </ul>
+  </ul>
+</div>
+
+<div class="fixed-action-btn" style="bottom: 24px; right:24px;">
+  <a class="btn-floating btn-large orange">
+    <i class="fa fa-share"></i>
+  </a>
+  <ul>
+    <li><a class="btn-floating blue" href="https://twitter.com/intent/tweet?text=I%20just%20visited%20https:%3A%2F%2Fwoodroffehs.ca%2F%20!" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+    <li><a class="btn-floating blue" href="https://www.facebook.com/sharer/sharer.php?u=https://woodroffehs.ca" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+  </ul>
+</div>
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper" style="background-color: orange;">
+      <a href="#" data-activates="nav-mobile" class="show-on-large button-collapse right"><i class="material-icons">toc</i></a>
+      <label><a href="#" data-activates="nav-mobile" id="headerSearchButton" class="show-on-large left" width="40.5px"><i class="material-icons">search</i></a></label>
+      <div class="hide-on-med-and-down">
+        <a href="/" class="brand-logo center"><img src="/images/large-logo.png" alt="WoodroffeHS"></a>
+      </div>
+      <div class="hide-on-large-only">
+        <a href="/" class="brand-logo center"><img height="53px" src="/images/mobile-icon.png" alt="Woodroffe High School"></a>
+      </div>
+      <ul id="naverR" class="right hide-on-med-and-down">
+      {% for item in site.data.navbarRight %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
+      <ul id="naverL" class="left hide-on-med-and-down">
+      {% for item in site.data.navbarLeft %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -3,7 +3,7 @@ import os, bs4, re
 souped = bs4.BeautifulSoup(open("clubs"), "html.parser")
 tSouped = bs4.BeautifulSoup(open("teachers"), "html.parser")
 
-pet = ["- clubName", "  supervisor", "  email"]
+pet = ["- clubName", "  supervisor", "  email", "  link"]
 tPet = ["- name", "  email", "  webpage", "  department", "  position"]
 teachers = []
 clubs = []

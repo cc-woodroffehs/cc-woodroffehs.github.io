@@ -1,6 +1,8 @@
 <script>
 $(".button-collapse").sideNav();
+$(".dropdown-button").dropdown();
 
+$('.collapsible').collapsible();
 $("#headerSearchButton").click(function() {
   $('.button-collapse').sideNav('show');
   $('#search-input').focus();
@@ -9,18 +11,30 @@ $("#headerSearchButton").click(function() {
 
 <!-- Side bar search --->
 <script>
-  $(function(){
-    $('#search-input').keyup(function(){
-      var searchText = $(this).val().toLowerCase();
+$(function() {
+  $('#search-input').keyup(function(){
+    var searchText = $(this).val().toLowerCase();
 
-      $('#nav-mobile > li').each(function(){
-        var currentLiText = $(this).text().toLowerCase(),
-          showCurrentLi = currentLiText.indexOf(searchText) !== -1;
-
-        $(this).toggle(showCurrentLi);
-      });
-    });
-  });
+    $('#nav-mobile > li').each(function(){
+      var currentText = $(this).text().toLowerCase();
+      if (currentText.includes(searchText)) {
+        $(this).show();
+        if ($(this).has("#clubs")) {
+          $("#clubs > li").each(function(){
+            var clubName = $(this).text().toLowerCase();
+            if (clubName.includes(searchText)){
+              $(this).show();
+            } else {
+              $(this).hide();
+            }
+          })
+        }
+      } else {
+        $(this).hide();
+      }
+    })
+  })
+})
 </script>
 
 <!--- Sidebar show "Search..." text --->
@@ -42,7 +56,4 @@ $("#headerSearchButton").click(function() {
 $(".clickables").click(function() {
   window.open($(this).attr("wantedUrl"), '_blank');
 })
-</script>
-<script>
-
 </script>
