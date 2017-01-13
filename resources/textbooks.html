@@ -1,8 +1,29 @@
 ---
 layout: default
 ---
-<div class="collection">
+<div class="container">
+  <h5>Free online ontario high school (secondary school) textbooks, brought to you by the students @ woodroffe high school.</h5>
+  <div class="row">
+    <input type="text" id="search-textbooks" placeholder="Search..."/>
+  </div>
+</div>
+<div class="collection" id="tList">
 {% for item in site.data.textbooks %}
 <a href="{{ item.url }}" class="collection-item">{{ item.title }}</a>
  {% endfor %}
 </div>
+
+<script>
+  $(function(){
+    $('#search-textbooks').keyup(function(){
+      var searchText = $(this).val().toLowerCase();
+
+      $('#tList > a').each(function(){
+        var currentLiText = $(this).text().toLowerCase(),
+          showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+
+        $(this).toggle(showCurrentLi);
+      });
+    });
+  });
+</script>
