@@ -1,12 +1,34 @@
 ---
 layout: official
 ---
-<div class="carousel">
- {% for item in site.data.slideshow %}
-  <a class="carousel-item" href="#"><img src={{ item.url }}></a>
- {% endfor %}
+{% include footer.html %}
+{% include head.html %}
+<div class="carousel" width=100% height=100%>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (1).png" ></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (2).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (3).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (4).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (5).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (6).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (7).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (8).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (9).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (10).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (11).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (12).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (13).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (14).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (15).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (16).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (17).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (18).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (19).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (20).png"></a>
 </div>
-<div class="carousel">
- <a class="carousel-item" href="#one! "><iframe src="https://drive.google.com/file/d/0B9L3FUJCsMkeVW1iSW1yUUpHejA/preview" width="640" height="480"></iframe></a>
- <a class="carousel-item" href="#two! "><iframe src="https://drive.google.com/file/d/0B9L3FUJCsMkeVW1iSW1yUUpHejA/preview" width="640" height="480"></iframe></a>
-</div>
+<script>
+$(document).ready(function(){
+      $('.carousel').carousel({dist: -25, indicators: true, shift: 25});
+      
+    });
+setInterval(function(){$('.carousel').carousel('next');}, 10000);
+</script>
