@@ -1,6 +1,38 @@
 ---
 layout: official
 ---
-<div class="valign-wrapper">
-<p class="valign-wrapper">The slideshow is currently under maintenance. Please check back later.<p>
+<div class="carousel" style="height: 202px;">
+    <a class="carousel-item" href="#"><img src="/slideshow/- (1).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (2).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (3).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (4).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (5).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (6).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (7).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (8).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (9).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (10).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (11).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (12).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (13).pnG"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (14).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (15).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (16).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (17).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (18).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (19).png"></a>
+    <a class="carousel-item" href="#"><img src="/slideshow/- (20).png"></a>
+</div>
+<div class="hide">
+ {% include footer.html %}
+ {% include head.html %}
+</div>
+<div class="hide">
+<script>
+$(document).ready(function(){
+      $('.carousel').carousel({dist: -25, shift: 25, fullWidth: true});
+      
+    });
+setInterval(function(){$('.carousel').carousel('next');}, 10000);
+</script>
 </div>
