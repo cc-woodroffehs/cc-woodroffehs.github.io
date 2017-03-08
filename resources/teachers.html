@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
   <div class="row">
-    <input type="text" id="search-teacher" value="Search..."/>
+    <input type="text" id="search-teacher" placeholder="Search..."/>
   </div>
   <div class="row">
     <table class="responsive-table">
@@ -14,22 +14,47 @@ layout: default
           <th data-field="webpage">Webpage</th>
           <th data-field="department">Department</th>
           <th data-field="position">Position</th>
+          <th data-field="rating">RMT Rating</th>
         </tr>
       </thead>
       <tbody id="tList">
         {% for teacher in site.data.teacherList2 %}
           <tr>
-            <td>{{ teacher.name }}</td>
+            <td class=".name">{{ teacher.name }}</td>
             <td>{{ teacher.email }}</td>
             <td><a href="{{ teacher.website }}">{{ teacher.website }}</a></td>
             <td>{{ teacher.department }}</td>
             <td>{{ teacher.position }}</td>
+            <td class="rmt-rating">Loading...</td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
 <div>
+
+<script>
+function search(teacher){
+  $.ajax({
+    type:"POST",
+    url: "http://localhost:8080",
+    dataType: "json",
+    data: JSON.stringify({'teacher': teacher})
+  })
+  .done(function(data){
+    return data['score']
+  })
+};
+$(document).ready(function(){
+  var table = $('#tList');
+  console.log(table)
+  $('#tList > tr').each(function(){
+    var teacher = $(this).find('.name').text();
+    var score = search(teacher);
+    $(this).find('.rmt-rating').text(score);
+  })
+});
+</script>
 
 <script>
   $(function(){
@@ -44,24 +69,4 @@ layout: default
       });
     });
   });
-</script>
-
-<script>
-  $(function() {
-    $('#search-teacher').focus(function(){
-      if ($(this).val() == "Search...") {
-        $(this).attr("value", "");
-      }
-    })
-  })
-</script>
-
-<script>
-  $(function() {
-    $('#search-teacher').focusout(function(){
-      if ($(this).val() == "") {
-        $(this).attr("value", "Search...");
-      }
-    })
-  })
 </script>
