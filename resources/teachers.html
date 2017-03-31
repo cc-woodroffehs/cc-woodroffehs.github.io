@@ -6,7 +6,7 @@ layout: default
     <input type="text" id="search-teacher" placeholder="Search..."/>
   </div>
   <div class="row">
-    <table class="responsive-table">
+    <table class="responsive-table" width="100%" border="1">
       <thead>
         <tr>
           <th data-field="name">Name</th>
@@ -22,7 +22,7 @@ layout: default
           <tr>
             <td class=".name">{{ teacher.name }}</td>
             <td>{{ teacher.email }}</td>
-            <td><a href="{{ teacher.website }}">{{ teacher.website }}</a></td>
+            <td class="truncate"><a href="{{ teacher.website }}">{{ teacher.website }}</a></td>
             <td>{{ teacher.department }}</td>
             <td>{{ teacher.position }}</td>
             <td class="rmt-rating">Loading...</td>
