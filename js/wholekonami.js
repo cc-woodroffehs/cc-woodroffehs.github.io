@@ -44,6 +44,6 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   $('body').empty();
-  document.body.style.backgroundImage = "url('https://media.giphy.com/media/l0Iy6GL0hdorprxUk/giphy.gif')";
+  $('body').css('backgroundImage', "url('https://media.giphy.com/media/l0Iy6GL0hdorprxUk/giphy.gif')");
   console.log("Yea boy!");
 }
